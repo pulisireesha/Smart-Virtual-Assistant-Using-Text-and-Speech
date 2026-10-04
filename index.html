@@ -1,0 +1,206 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Virtual Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="robot">
+            🤖
+        </div>
+
+        <h1>Smart Virtual Assistant</h1>
+
+        <p>
+            Interact with the assistant using Text or Speech
+        </p>
+
+    </header>
+
+
+    <!-- Assistant Card -->
+
+    <div class="assistant-card">
+
+
+        <!-- Assistant Message -->
+
+        <div class="assistant-message">
+
+            <div class="assistant-icon">
+                🤖
+            </div>
+
+            <div>
+
+                <h3>Assistant</h3>
+
+                <p id="assistantMessage">
+                    Hello! How can I help you today?
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Text Input -->
+
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="textInput"
+                placeholder="Type a command..."
+                onkeypress="handleEnter(event)"
+            >
+
+            <button onclick="processCommand()">
+                Send
+            </button>
+
+        </div>
+
+
+        <!-- Voice -->
+
+        <div class="voice-area">
+
+            <button
+                class="voice-button"
+                onclick="startVoiceRecognition()">
+
+                🎤 Speak to Assistant
+
+            </button>
+
+            <p id="voiceStatus">
+                Click the microphone and speak
+            </p>
+
+        </div>
+
+
+        <!-- Response -->
+
+        <div class="response-box">
+
+            <h2>💬 Assistant Response</h2>
+
+            <p id="response">
+                Your response will appear here.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- Quick Commands -->
+
+    <div class="quick-commands">
+
+        <h2>⚡ Quick Commands</h2>
+
+        <button onclick="quickCommand('What is the time?')">
+            🕐 Time
+        </button>
+
+        <button onclick="quickCommand('What is the date?')">
+            📅 Date
+        </button>
+
+        <button onclick="quickCommand('Hello')">
+            👋 Hello
+        </button>
+
+        <button onclick="quickCommand('Open YouTube')">
+            ▶️ YouTube
+        </button>
+
+        <button onclick="quickCommand('Open Google')">
+            🔍 Google
+        </button>
+
+        <button onclick="quickCommand('Open Gmail')">
+            📧 Gmail
+        </button>
+
+    </div>
+
+
+    <!-- Command Examples -->
+
+    <div class="examples">
+
+        <h2>💡 Example Commands</h2>
+
+        <ul>
+
+            <li>What is the time?</li>
+
+            <li>What is today's date?</li>
+
+            <li>Hello</li>
+
+            <li>Open Google</li>
+
+            <li>Open YouTube</li>
+
+            <li>Open Gmail</li>
+
+            <li>Search for artificial intelligence</li>
+
+            <li>Calculate 25 + 50</li>
+
+            <li>Tell me about yourself</li>
+
+            <li>Thank you</li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            Smart Virtual Assistant
+        </p>
+
+        <p>
+            Text + Speech Technology | Mini Project
+        </p>
+
+    </footer>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+```
